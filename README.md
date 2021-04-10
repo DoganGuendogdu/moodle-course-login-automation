@@ -54,7 +54,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/DoganGuendogdu/moodle-course-login-automation
+   git clone https://github.com/DoganGuendogdu/moodle-course-login-automation.git
 
    ```
 2. Install requirements
