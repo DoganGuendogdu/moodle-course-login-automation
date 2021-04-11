@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -9,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.expected_conditions import presence_of_element_located
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.common.exceptions import TimeoutException
+from pathlib import Path
 import time
 import csv
 import sys
@@ -16,9 +15,11 @@ import sys
 def get_username_password():
     result = []
 
+    file = Path("./files/username_password.csv")
+
     try:
       # read username and password for Login
-      with open ("files/username_password.csv", "r") as csv_file:
+      with open (file, "r") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter= ",")
 
         # ignore header
@@ -43,6 +44,8 @@ def get_username_password():
 # get input of user
 def get_selected_course(driver):
 
+    courses_file = Path("./files/courses.csv")
+
     try:
         input = sys.argv[1]
     except IndexError:
@@ -52,7 +55,7 @@ def get_selected_course(driver):
         quit()
 
 
-    with open("files/courses.csv", "r") as csv_file:
+    with open(courses_file, "r") as csv_file:
         csv_reader = csv.reader(csv_file)
 
         # ignore header
