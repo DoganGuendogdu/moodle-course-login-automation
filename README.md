@@ -26,7 +26,7 @@
 ## About The Project
 A script which allows you to open a choosen course automatically on Moodle at **HS Bochum**.
 
-Only executable on **Linux**.
+Executable on **Linux**.
 
 
 ### Built With
@@ -72,10 +72,27 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## 1. Prepare login data 
+Open **'files/username_password.csv'** and enter your moodle username and password
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<img src = "images/login.png"/>
 
+## 2. Course overview 
+Short names are only available for courses which are listed in the course overview  
+Courses can be listed in the card, summary or list format
+
+<img src = "images/card_view.png"/>
+
+## 3. Prepare courses
+Open **'files/courses.csv'** and list your course names with your own choosen short form.  
+The course names have the be exactly like they are given on Moodle.
+
+<img src = "images/courses.png"/>
+
+## Demo
+Opening the course "Mikrocontroller / Mikroprozessortechnik" with the short form 'micro'
+
+<img src = "images/demo.gif"/>
 
 <!-- CONTACT -->
 ## Contact
