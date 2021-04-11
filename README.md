@@ -26,8 +26,6 @@
 ## About The Project
 A script which allows you to open a choosen course automatically on Moodle at **HS Bochum**.
 
-Executable on **Linux**.
-
 
 ### Built With
 
@@ -42,12 +40,14 @@ Executable on **Linux**.
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-* install and setup selenium webdriver for Firefox  
+* Install geckodriver [Firefox]  
   <a>https://github.com/mozilla/geckodriver/releases<a/>
   
-   installation and setup guide    
-  <a>https://www.youtube.com/watch?v=xgsFwaw9W4Q<a/>
- 
+   * Setup guide **Linux**    
+     <a>https://medium.com/@sonaldwivedi/downloading-and-setting-up-geckodriver-87873e25207c<a/>
+  
+   * Setup guide **Windows**  
+     <a>http://www.learningaboutelectronics.com/Articles/How-to-install-geckodriver-Python-windows.php<a/>
 
 
 ### Installation
@@ -62,12 +62,15 @@ To get a local copy up and running follow these simple steps.
    ```sh
    pip3 install -r requirements.txt
    ```
-3. Bash script 
+3. Execute script 
   ```sh
-   chmod +x main.sh
    ./main.sh 'your_short_name'
    ```
-
+    or 
+   ```sh
+   python3 main/main.py 'your_short_name'
+   ```
+   
 
 <!-- USAGE EXAMPLES -->
 ## Usage
